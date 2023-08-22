@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+    <style>
+        body{
+            background-color: rgba(0, 0, 0, 0.76);
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Sistema de multas </h1>
+    <input type="number" name="velname" id="velid">
+    <input type="button" value="Verificar" onclick="verificarvel()">
+    <div id="resultado"></div>
+    <div id="multa" ></div>
+
+<script>
+    function verificarvel(){
+    var velocidade = Number(document.getElementById('velid').value)
+    document.getElementById('resultado').innerText = `Sua velocidade é: ${velocidade}km/h ` 
+    if(velocidade <= 50){
+        document.getElementById('multa').innerText = 'Dentro do limite' 
+    } else{
+        document.getElementById('multa').innerText = 'Multado FDP' 
+    }
+    
+   // document.write("Velocidade digitada: " + velocidade);
+    }
+</script>
+</body>
+</html>

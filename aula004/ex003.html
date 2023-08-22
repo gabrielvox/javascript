@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex001</title>
+</head>
+<body>
+    <h1>Hi Lorena!</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius temporibus culpa voluptate praesentium saepe cum voluptates laborum possimus? Fugiat eius exercitationem omnis id rerum cum dicta nihil eaque eligendi commodi!</p>
+
+    <script>
+        //window.alert('Alerta')
+        //window.confirm('Ta gostando?')
+        var n1 = Number.parseFloat(window.prompt('Digite um numero: ')) //modo numero float
+        // var n2 = window.prompt('Digite outro numero: ') // modo string
+        var n2 = Number.parseInt(window.prompt('Digite um numero: ')) //modo numero inteiro 
+        var n3 = Number(window.prompt('Digite mais um numero')) //aqui o java se vira pra descobrir si é float ou int
+        var s = n1 + n2 + n3 //o java estava confuso nessa parte
+        window.alert(`A soma entre ${n1} e ${n2} e ${n3} é igual a: ${s.toFixed(3)}`)
+        //window.alert('Total é ' + s) 
+        //window.alert('Total é ' + String(s)) //conversao para String 
+
+        // (number + number) para adiacao
+        // (string + string) para concatenacao
+
+        document.write (s.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})) //coloca o simbolo monetario
+    </script>
+
+</body>
+</html>
+
+

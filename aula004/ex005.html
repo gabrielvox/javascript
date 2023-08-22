@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perguntas</title>
+    <style>
+        body{
+            background-color: black;
+            color: green;
+            padding: 20px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Texto h1 primeiro</h1>
+    <h2 id="h2id">Texto h2 com ID</h2>
+    <p>Primeiro paragrafo</p>
+    <p>Segundo paragrafo</p>
+    <p>Terceiro paragrafo</p><br>
+    <p id="pid">Quarto paragrafo com ID</p><br>
+    <script>
+
+        var p1 = window.document.getElementsByTagName('p')[0]
+        var p2 = window.document.getElementsByTagName('p')[2]
+        var p3 = window.document.getElementsByTagName('p')[7]
+
+        window.document.write('Esta escrito assim: <br><br>' + p1.innerText) //exibindo a variavel selecionada
+ 
+        p1.style.color ='blue'  //muda o estilo css do objeto, muda com a selecao []
+        p2.style.color ='red'
+        p3.style.display ='none'
+
+       /* var  toString(titulo = window.document.getElementById('h2id'))
+        var paragrafo = document.getElementById('pid') 
+        //titulo.innerText = 'trocando texto' //troca o texro do id selecionado
+        document.write (titulo + paragrafo)*/
+
+
+    </script>
+</body>
+</html>

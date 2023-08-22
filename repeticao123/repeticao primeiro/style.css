@@ -1,0 +1,21 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(62, 61, 61);
+   
+  }
+
+
+div {
+    height: 500px;
+    width: 500px;
+    background-color: rgb(22, 40, 69);
+    color: wheat;
+
+ 
+}
+

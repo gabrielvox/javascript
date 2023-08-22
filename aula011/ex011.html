@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+    <style>
+        body{
+            background-color: rgba(0, 0, 0, 0.76);
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando sua nacionalidade</h1>
+    Escreva o nome do pais <input type="text" name="name" id="EntradaTexto">
+    <input type="button" value="Verificar" onclick="Testar()">
+    <div id="res" ></div>
+    
+
+    <script>
+        function Testar(){
+        var resultado = document.querySelector('input#EntradaTexto').value 
+
+        var br
+
+      
+        if (resultado.toLowerCase() === 'brasil') {
+             br = 'Brasileiro'
+            //document.getElementById('res').innerText = 'Brasileiro'
+        }
+        else if (resultado.toLowerCase() === 'portugues')
+              br = 'Burro'
+
+        else {
+           // document.getElementById('res').innerText = 'ELSE'
+             br = 'ELSE'
+
+        }
+        
+        document.getElementById('res').innerText = `Voce digitou ${resultado.toUpperCase()} entao voce é: ${br}` 
+
+    }
+      
+      
+
+    </script>
+    
+</body>
+</html>

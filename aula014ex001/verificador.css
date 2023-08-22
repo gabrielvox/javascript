@@ -1,0 +1,67 @@
+@charset "utf-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgba(82, 142, 215, 0.669);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1{
+    padding-bottom: 30px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+section#section-id{
+    background-color: beige;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px;
+    height: 50vh;
+    width: 50vh;
+    padding: 20px 10px 10px 10px;
+   /* display: flex;
+    justify-content: center;
+    align-items: center;*/
+}
+
+#div-img{
+    display: flex;
+    justify-content: center;
+}
+
+#img-homem, #kid-mulher, #img-mulher, #ad-mulher, #velha-mulher{
+    display: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    width: 120px;
+    border-radius: 100px;
+}
+
+footer {
+    padding-top: 20px;
+}
+
+p, input[type="radio"], label {
+    display: inline-block;
+    margin-right: 10px; /* Adicione margem para espaçamento entre os elementos */
+    vertical-align: middle; /* Alinhe verticalmente os elementos */
+  }
+ img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    width: 120px;
+    border-radius: 100px;
+ }

@@ -1,0 +1,25 @@
+Ordem de precedencia operadores:
+()
+**  potencia
+* / % calcula quem vim primeiro
++ - 
+
+
+
+contas 
+n = 10
+n = n + n
+n += 1
+n -= 1
+n--
+--n
+n++
+++n
+
+
+Operadores logicos
+! negacao NOT
+&& conjuncao AND
+|| disjuncao OR
+
+
